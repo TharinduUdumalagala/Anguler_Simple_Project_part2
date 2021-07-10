@@ -9,6 +9,10 @@ import { OdrerPageComponent } from './components/order-page/odrer-page.component
 import { NotFoundPageComponent } from './components/not-found-page/not-found-page.component';
 import { LoginPageComponent } from './components/login-page/login-page.component';
 import {RouterModule} from "@angular/router";
+import { SaveCustomerPageComponent } from './components/customer-page/items/save-customer-page/save-customer-page.component';
+import { UpdateCustomerPageComponent } from './components/customer-page/items/update-customer-page/update-customer-page.component';
+import { DeleteCustomerPageComponent } from './components/customer-page/items/delete-customer-page/delete-customer-page.component';
+import { SearchCustomerPageComponent } from './components/customer-page/items/search-customer-page/search-customer-page.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +21,11 @@ import {RouterModule} from "@angular/router";
     ItemPageComponent,
     OdrerPageComponent,
     NotFoundPageComponent,
-    LoginPageComponent
+    LoginPageComponent,
+    SaveCustomerPageComponent,
+    UpdateCustomerPageComponent,
+    DeleteCustomerPageComponent,
+    SearchCustomerPageComponent
   ],
   imports: [
     BrowserModule,

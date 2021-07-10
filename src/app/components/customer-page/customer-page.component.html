@@ -1,1 +1,12 @@
 <h1>Customer Page</h1>
+<hr>
+<div>
+  <input (click)="loadPage('save-customer')" type="button" value="Save Customer" class="btn btn-primary btn-sm">&nbsp;
+  <input (click)="loadPage('update-customer')" type="button" value="Update Customer" class="btn btn-primary btn-sm">&nbsp;
+  <input (click)="loadPage('delete-customer')" type="button" value="Delete Customer" class="btn btn-primary btn-sm">&nbsp;
+  <input (click)="loadPage('search-customer')" type="button" value="Search Customer" class="btn btn-primary btn-sm">&nbsp;
+
+</div>
+<hr>
+
+<router-outlet></router-outlet>
