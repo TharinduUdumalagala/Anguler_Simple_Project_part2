@@ -1,0 +1,27 @@
+.nav-outer{
+  ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li{
+      padding: 8px 35px;
+      display: inline;
+      border: 2px solid white;
+      background-color: #2980b9;
+      color: black;
+    }
+
+    li:hover{
+      background-color: #34495e;
+      cursor: pointer;
+      color: white;
+    }
+  }
+}
+
+.activated-route{
+  background-color: #34495e !important;
+  color: white!important;
+}
+
