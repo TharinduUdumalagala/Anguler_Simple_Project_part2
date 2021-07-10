@@ -7,6 +7,7 @@ import {Route, Router} from "@angular/router";
   styleUrls: ['./customer-page.component.scss']
 })
 export class CustomerPageComponent implements OnInit {
+  selectedId='';
 
   constructor(private  _router: Router) { }
 
@@ -14,6 +15,11 @@ export class CustomerPageComponent implements OnInit {
   }
 
   loadPage(link: string) {
+    if (link==='delete-customer'){
+      // this._router.navigate(['/customer/'+link, 'C-001']).then();
+      this._router.navigate(['/customer/'+link, this.selectedId]).then();
+      return;
+    }
     this._router.navigate(['/customer/'+link]).then();
   }
 }

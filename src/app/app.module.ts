@@ -13,6 +13,7 @@ import { SaveCustomerPageComponent } from './components/customer-page/items/save
 import { UpdateCustomerPageComponent } from './components/customer-page/items/update-customer-page/update-customer-page.component';
 import { DeleteCustomerPageComponent } from './components/customer-page/items/delete-customer-page/delete-customer-page.component';
 import { SearchCustomerPageComponent } from './components/customer-page/items/search-customer-page/search-customer-page.component';
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { SearchCustomerPageComponent } from './components/customer-page/items/se
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule
+    RouterModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

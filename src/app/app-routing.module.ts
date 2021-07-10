@@ -18,7 +18,7 @@ const routes: Routes = [
       {path:'',redirectTo:'/customer/save-customer',pathMatch:'full'},
       {path:'save-customer', component: SaveCustomerPageComponent},
       {path:'update-customer', component: UpdateCustomerPageComponent},
-      {path:'delete-customer', component: DeleteCustomerPageComponent},
+      {path:'delete-customer/:id', component: DeleteCustomerPageComponent},
       {path:'search-customer', component: SearchCustomerPageComponent}
     ]},
   {path:'item', component:ItemPageComponent},
